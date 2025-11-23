@@ -2259,28 +2259,4 @@ Template responsive css
     font-size: 1.8rem;
     line-height: 1.2;
   }
-
-  /* 1. Desbloquear el Scroll vertical y la altura */
-html, body {
-    height: auto !important;         /* Permite que la web crezca hacia abajo */
-    min-height: 100% !important;     /* Ocupa al menos toda la pantalla */
-    overflow-y: auto !important;     /* Fuerza a que aparezca la barra de scroll */
-    overflow-x: hidden !important;   /* Evita scroll horizontal indeseado */
-    position: relative !important;
-}
-
-/* 2. Matar el Preloader (Pantalla de carga pegada) */
-#preloader {
-    display: none !important;        /* Lo oculta forzosamente */
-    visibility: hidden !important;
-    z-index: -1 !important;
-    width: 0 !important;
-    height: 0 !important;
-}
-
-/* 3. Ajuste para el contenedor Parallax si se queda pegado */
-.dzsparallaxer {
-    height: auto !important;
-    min-height: 100vh;               /* Asegura que ocupe la pantalla al inicio */
-}
 }
