@@ -1,0 +1,6 @@
+[build]
+  publish = "html"
+  command = "" 
+
+[context.production.environment]
+  NODE_VERSION = "10.24.1" 
