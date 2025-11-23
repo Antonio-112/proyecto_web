@@ -1,12 +1,6 @@
 [build]
-  # Le decimos a Netlify que la carpeta pública es 'html'
-  # Esto soluciona los problemas de CSS porque las rutas relativas funcionarán desde aquí.
   publish = "html"
-  
-  # Si los archivos CSS ya existen (ya fueron compilados), NO necesitamos comando de build.
-  # Esto evita el error de versión de Node.js completamente.
   command = "" 
 
 [context.production.environment]
-  # Si en el futuro necesitas ejecutar 'npm install', esto fuerza una versión antigua compatible.
   NODE_VERSION = "10.24.1" 
